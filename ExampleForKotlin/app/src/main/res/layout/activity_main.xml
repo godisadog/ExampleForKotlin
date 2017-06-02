@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kotlin.MainActivity"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottomIndicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/main_bottom_bg"
+        >
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/chatListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/main_btn_style"
+            android:text="微信"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/contactBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/main_btn_style"
+            android:text="通讯录"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/findBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/main_btn_style"
+            android:text="发现"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/meBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/main_btn_style"
+            android:text="我"/>
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
